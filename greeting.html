@@ -11,33 +11,33 @@
    <script type="text/babel">
 
    class Greeting extends React.Component {
-         render() {
-           return (
-             <div>
-               <h1>Hello World!</h1>
-             </div>
-           );
-         }
-       }
-
-       ReactDOM.render(
-         <Greeting />, document.getElementById('app')
+     render() {
+       return (
+         <div>
+           <h1>Hello World!</h1>
+         </div>
        );
+      }
+    }
 
-       class HelloMessage extends React.Component {
-           render() {
-               return (
-                 <div>
-                 Hello {this.props.name}
-                 </div>
-               );
-             }
-           }
+    ReactDOM.render(
+      <Greeting />, document.getElementById('app')
+    );
 
-           ReactDOM.render(
-     <HelloMessage name="Liane" />,
-     mountNode
-   );
+    class HelloMessage extends React.Component {
+      render() {
+        return (
+          <div>
+            Hello {this.props.name}
+          </div>
+         );
+       }
+     }
+
+    ReactDOM.render(
+      <HelloMessage name="Liane" />,
+      mountNode
+    );
 
 
    </script>
